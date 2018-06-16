@@ -12,6 +12,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        dataBinding.enabled = true
     }
     buildTypes {
         release {
@@ -27,6 +28,7 @@ dependencies {
     def dagger = "2.14.1"
     def rxJava = "2.1.14"
     def rxAndroid = "2.0.2"
+    def dataBinding = "3.1.2"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -48,6 +50,9 @@ dependencies {
     implementation "android.arch.lifecycle:reactivestreams:$archComponent"
     implementation "android.arch.lifecycle:extensions:$archComponent"
     kapt "android.arch.persistence.room:compiler:$archComponent"
+
+    //DataBinding
+    kapt "com.android.databinding:compiler:$dataBinding"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

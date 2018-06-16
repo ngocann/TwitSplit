@@ -31,4 +31,5 @@ class TwitSplitService {
 
         return twitMessageList.map { it.toString() }
     }
+
 }
