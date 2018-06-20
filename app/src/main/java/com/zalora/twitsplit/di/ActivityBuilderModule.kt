@@ -1,8 +1,8 @@
 package com.zalora.twitsplit.di
 
-import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.ViewModel
-import com.zalora.twitsplit.ui.MainActivity
+import com.zalora.twitsplit.ui.main.AddTwitActivity
+import com.zalora.twitsplit.ui.main.MainActivity
 import com.zalora.twitsplit.viewmodel.TwitViewModel
 import dagger.Binds
 import dagger.Module
@@ -20,4 +20,7 @@ internal abstract class ActivityBuilderModule {
     @IntoMap
     @ViewModelKey(TwitViewModel::class)
     abstract fun bindTwitViewModel(viewModel: TwitViewModel): ViewModel
+
+    @ContributesAndroidInjector
+    internal abstract fun addTwitActivity(): AddTwitActivity
 }
