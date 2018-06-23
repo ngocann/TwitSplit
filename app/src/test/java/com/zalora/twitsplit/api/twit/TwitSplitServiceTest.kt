@@ -1,4 +1,4 @@
-package com.zalora.twitsplit.service
+package com.zalora.twitsplit.api.twit
 
 import org.junit.Test
 

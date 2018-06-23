@@ -1,4 +1,4 @@
-package com.zalora.twitsplit.service
+package com.zalora.twitsplit.api.twit
 
 import java.util.*
 
@@ -31,4 +31,5 @@ class TwitSplitService {
 
         return twitMessageList.map { it.toString() }
     }
+
 }
