@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zalora.twitsplit">
+    package="com.smartcontrol.smartcontrol">
 
     <application
         android:name=".MyApplication"
@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.main.AddTwitActivity"
+        <activity android:name=".ui.main.AddBoardActivity"
             android:theme="@style/AppTheme.NoActionBar"
             />
     </application>

@@ -5,8 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <variable
-            name="board"
-            type="com.smartcontrol.smartcontrol.model.Board"/>
+            name="relay"
+            type="com.smartcontrol.smartcontrol.model.Relay"/>
     </data>
     <android.support.v7.widget.CardView
         android:layout_margin="8dp"
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
-                android:text="@{board.name}"
+                android:text="@{relay.name}"
                 android:id="@+id/tvName"
                 android:padding="4dp"
                 android:textColor="@android:color/black"
